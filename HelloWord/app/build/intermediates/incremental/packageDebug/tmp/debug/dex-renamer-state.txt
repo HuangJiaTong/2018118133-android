@@ -1,0 +1,4 @@
+#Mon Sep 21 15:55:58 CST 2020
+base.0=E\:\\HelloWord\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
