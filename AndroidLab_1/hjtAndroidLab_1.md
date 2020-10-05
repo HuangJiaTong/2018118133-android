@@ -1,12 +1,72 @@
-Debug ‘app’
+实验一：活动的生命周期
 
-先执行MainActivity的onCreate()函数
+启动debug模式，首先调用MainActivity的onCreate()
 
-![img](hjtAndroidLab_1.assets/wps1.jpg) 
+![img](hjtAndroidLab_1.assets/clip_image002.jpg)
 
-按F9 执行MainActivity的onStart()函数
+按F9，调用MainActivity的onStart()
 
-![img](hjtAndroidLab_1.assets/wps2.jpg) 
+![img](hjtAndroidLab_1.assets/clip_image004.jpg)
+
+按F9，调用MainActivity的reSume()
+
+![img](hjtAndroidLab_1.assets/clip_image006.jpg)
+
+按F9，出现START HJTNORMALACTIVITY按钮和START HJTDIALOGACTIVITY按钮
+
+![img](hjtAndroidLab_1.assets/clip_image008.jpg)
+
+点击START HJTNORMALACTIVITY按钮，调用MainActivity的onPause()
+
+![img](hjtAndroidLab_1.assets/clip_image010.jpg)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+按F9，调用hjtNormalActivity的onCreate()
+
+![img](hjtAndroidLab_1.assets/clip_image012.jpg)
+
+按F9,调用MainActivity的onStop()
+
+![img](hjtAndroidLab_1.assets/clip_image014.jpg)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+按F9，显示hjtNormalActivity的内容
+
+![img](hjtAndroidLab_1.assets/clip_image016.jpg)
+
+点击返回，调用MainActivity的onRestart()
+
+![img](hjtAndroidLab_1.assets/clip_image018.jpg)
 
  
 
@@ -26,15 +86,13 @@ Debug ‘app’
 
  
 
- 
+按F9,再次调用MainActivity的onStar()
 
-按F9，执行MainActivity的onResume()函数
+![img](hjtAndroidLab_1.assets/clip_image020.jpg)
 
-![img](hjtAndroidLab_1.assets/wps3.jpg) 
+按F9，调用MainActivity的onResume()
 
-按F9，出现BUTTON 1 按钮
-
-![img](hjtAndroidLab_1.assets/wps4.jpg) 
+![img](hjtAndroidLab_1.assets/clip_image022.jpg)
 
  
 
@@ -54,29 +112,13 @@ Debug ‘app’
 
  
 
- 
+按F9，再次出现START HJTNORMALACTIVITY按钮和START HJTDIALOGACTIVITY按钮
 
- 
+![img](hjtAndroidLab_1.assets/clip_image024.jpg)
 
-点击BUTTON 1 按钮，执行MainActivity的onPause()函数
+这次点击START HJTDIALOGACTIVITY按钮，调用MainActivity的onPause()
 
-![img](hjtAndroidLab_1.assets/wps5.jpg) 
-
-按F9执行SecondActivity的onCreate()函数
-
-![img](hjtAndroidLab_1.assets/wps6.jpg) 
-
-按F9执行SecondActivity的onStart()函数
-
-![img](hjtAndroidLab_1.assets/wps7.jpg) 
-
-按F9执行SecondActivity的onResume()函数
-
-![img](hjtAndroidLab_1.assets/wps8.jpg) 
-
-按F9 执行MainActivity的onStop()函数
-
-![img](hjtAndroidLab_1.assets/wps9.jpg) 
+![img](hjtAndroidLab_1.assets/clip_image026.jpg)
 
  
 
@@ -87,6 +129,16 @@ Debug ‘app’
  
 
  
+
+ 
+
+按F9，调用hjtDialogActivity的onCreate()
+
+![img](hjtAndroidLab_1.assets/clip_image028.jpg)
+
+按F9，显示hjtDialogActivity的界面
+
+![img](hjtAndroidLab_1.assets/clip_image030.jpg)
 
  
 
@@ -102,6 +154,14 @@ Debug ‘app’
 
  
 
-按F9进入SecondActivity的界面，出现BUTTON 2按钮
+点击返回，调用MainActivity的onResume()
 
-![img](hjtAndroidLab_1.assets/wps10.jpg)
+![img](hjtAndroidLab_1.assets/clip_image032.jpg)
+
+再点击返回，调用MainActivity的onPause()，并退出程序
+
+![img](hjtAndroidLab_1.assets/clip_image034.jpg)
+
+分析与讨论：
+
+通过此次实验，我体会了一遍活动的完整的生命周期。当我们启动活动，首先会进入活动的运行状态，依次调用onCreate(),onStart(),onResume(),当前的活动运行并处于栈顶位置。当栈顶位置被其他活动占据，当前的活动进入暂停状态，当新活动是一个对话框式的活动，则执行onPause()方法。如果当前活动完全不可见，则进入停止状态，此时则调用onStop()方法。活动在有停止状态变为运行状态之前，则调用onReStart()。在活动被销毁之前则调用onDestroy()方法。
