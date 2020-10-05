@@ -2,23 +2,23 @@
 
 启动debug模式，首先调用MainActivity的onCreate()
 
-![img](file:///C:/Users/黄佳桐/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
+![img](imageLab_1/clip_image002.jpg)
 
 按F9，调用MainActivity的onStart()
 
-![img](file:///C:/Users/黄佳桐/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg)
+![img](imageLab_1/clip_image004.jpg)
 
 按F9，调用MainActivity的reSume()
 
-![img](file:///C:/Users/黄佳桐/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg)
+![img](imageLab_1/clip_image006.jpg)
 
 按F9，出现START HJTNORMALACTIVITY按钮和START HJTDIALOGACTIVITY按钮
 
-![img](file:///C:/Users/黄佳桐/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg)
+![img](imageLab_1/clip_image008.jpg)
 
 点击START HJTNORMALACTIVITY按钮，调用MainActivity的onPause()
 
-![img](file:///C:/Users/黄佳桐/AppData/Local/Temp/msohtmlclip1/01/clip_image010.jpg)
+![img](imageLab_1/clip_image010.jpg)
 
  
 
@@ -38,11 +38,11 @@
 
 按F9，调用hjtNormalActivity的onCreate()
 
-![img](file:///C:/Users/黄佳桐/AppData/Local/Temp/msohtmlclip1/01/clip_image012.jpg)
+![img](imageLab_1/clip_image012.jpg)
 
 按F9,调用MainActivity的onStop()
 
-![img](file:///C:/Users/黄佳桐/AppData/Local/Temp/msohtmlclip1/01/clip_image014.jpg)
+![img](imageLab_1/clip_image014.jpg)
 
  
 
@@ -62,11 +62,11 @@
 
 按F9，显示hjtNormalActivity的内容
 
-![img](file:///C:/Users/黄佳桐/AppData/Local/Temp/msohtmlclip1/01/clip_image016.jpg)
+![img](imageLab_1/clip_image016.jpg)
 
 点击返回，调用MainActivity的onRestart()
 
-![img](file:///C:/Users/黄佳桐/AppData/Local/Temp/msohtmlclip1/01/clip_image018.jpg)
+![img](imageLab_1/clip_image018.jpg)
 
  
 
@@ -88,11 +88,11 @@
 
 按F9,再次调用MainActivity的onStar()
 
-![img](file:///C:/Users/黄佳桐/AppData/Local/Temp/msohtmlclip1/01/clip_image020.jpg)
+![img](imageLab_1/clip_image020.jpg)
 
 按F9，调用MainActivity的onResume()
 
-![img](file:///C:/Users/黄佳桐/AppData/Local/Temp/msohtmlclip1/01/clip_image022.jpg)
+![img](imageLab_1/clip_image022.jpg)
 
  
 
@@ -114,11 +114,11 @@
 
 按F9，再次出现START HJTNORMALACTIVITY按钮和START HJTDIALOGACTIVITY按钮
 
-![img](file:///C:/Users/黄佳桐/AppData/Local/Temp/msohtmlclip1/01/clip_image024.jpg)
+![img](imageLab_1/clip_image024.jpg)
 
 这次点击START HJTDIALOGACTIVITY按钮，调用MainActivity的onPause()
 
-![img](file:///C:/Users/黄佳桐/AppData/Local/Temp/msohtmlclip1/01/clip_image026.jpg)
+![img](imageLab_1/clip_image026.jpg)
 
  
 
@@ -134,11 +134,11 @@
 
 按F9，调用hjtDialogActivity的onCreate()
 
-![img](file:///C:/Users/黄佳桐/AppData/Local/Temp/msohtmlclip1/01/clip_image028.jpg)
+![img](imageLab_1/clip_image028.jpg)
 
 按F9，显示hjtDialogActivity的界面
 
-![img](file:///C:/Users/黄佳桐/AppData/Local/Temp/msohtmlclip1/01/clip_image030.jpg)
+![img](imageLab_1/clip_image030.jpg)
 
  
 
@@ -156,11 +156,11 @@
 
 点击返回，调用MainActivity的onResume()
 
-![img](file:///C:/Users/黄佳桐/AppData/Local/Temp/msohtmlclip1/01/clip_image032.jpg)
+![img](imageLab_1/clip_image032.jpg)
 
 再点击返回，调用MainActivity的onPause()，并退出程序
 
-![img](file:///C:/Users/黄佳桐/AppData/Local/Temp/msohtmlclip1/01/clip_image034.jpg)
+![img](imageLab_1/clip_image034.jpg)
 
 分析与讨论：
 
