@@ -20,14 +20,14 @@ public class FlowerAdapter extends RecyclerView.Adapter<FlowerAdapter.ViewHolder
     static  class ViewHolder extends RecyclerView.ViewHolder{
         View flowerView;
         ImageView flowerImage;
-        EditText flowerName;
+        TextView flowerName;
 
 
         public ViewHolder(View view){
             super(view);
             flowerView = view;
             flowerImage = (ImageView) view.findViewById(R.id.flower_image);
-            flowerName =  (EditText) view.findViewById(R.id.flower_name);
+            flowerName =  (TextView) view.findViewById(R.id.flower_name);
         }
 
     }
