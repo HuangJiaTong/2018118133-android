@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity{
 
     private  void initFlowers(){
         for (int i = 0; i < 2; i++){
-            Flower jasmine = new Flower(getRandomlengthName("Camellia"),R.drawable.jasmine);
+            Flower jasmine = new Flower(getRandomlengthName("Jasmine"),R.drawable.jasmine);
             flowerList.add(jasmine);
             Flower carnation = new Flower(getRandomlengthName("Carnation"),R.drawable.carnation);
             flowerList.add(carnation);

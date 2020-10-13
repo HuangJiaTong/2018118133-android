@@ -56,7 +56,7 @@ public class FlowerAdapter extends RecyclerView.Adapter<FlowerAdapter.ViewHolder
             public void onClick(View v) {
                 int position = holder.getAdapterPosition();
                 Flower flower = mFlowerList.get(position);
-                Toast.makeText(v.getContext(),"you clicked image"+flower.getName(),
+                Toast.makeText(v.getContext(),"you clicked image "+flower.getName(),
                         Toast.LENGTH_SHORT).show();
             }
         });
