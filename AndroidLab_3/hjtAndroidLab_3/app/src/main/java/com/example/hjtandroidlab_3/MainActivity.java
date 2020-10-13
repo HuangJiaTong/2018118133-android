@@ -30,25 +30,25 @@ public class MainActivity extends AppCompatActivity{
 
     private  void initFlowers(){
         for (int i = 0; i < 2; i++){
-            Flower jasmine = new Flower(getRandomlengthName("Jasmine"),R.drawable.jasmine);
+            Flower jasmine = new Flower(getRandomlengthName("茉莉花"),R.drawable.jasmine);
             flowerList.add(jasmine);
-            Flower carnation = new Flower(getRandomlengthName("Carnation"),R.drawable.carnation);
+            Flower carnation = new Flower(getRandomlengthName("康乃馨"),R.drawable.carnation);
             flowerList.add(carnation);
-            Flower gardenia = new Flower(getRandomlengthName("Gardenia"),R.drawable.gardenia);
+            Flower gardenia = new Flower(getRandomlengthName("栀子花"),R.drawable.gardenia);
             flowerList.add(gardenia);
-            Flower hyacinth = new Flower(getRandomlengthName("Hyacinth"),R.drawable.hyacinth);
+            Flower hyacinth = new Flower(getRandomlengthName("风信子"),R.drawable.hyacinth);
             flowerList.add(hyacinth);
-            Flower lily = new Flower(getRandomlengthName("Lily"),R.drawable.lily);
+            Flower lily = new Flower(getRandomlengthName("百合"),R.drawable.lily);
             flowerList.add(lily);
-            Flower peony = new Flower(getRandomlengthName("Peony"),R.drawable.peony);
+            Flower peony = new Flower(getRandomlengthName("牡丹"),R.drawable.peony);
             flowerList.add(peony);
-            Flower rose = new Flower(getRandomlengthName("Rose"),R.drawable.rose);
+            Flower rose = new Flower(getRandomlengthName("玫瑰"),R.drawable.rose);
             flowerList.add(rose);
-            Flower poppy =  new Flower(getRandomlengthName("Poppy"),R.drawable.poppy);
+            Flower poppy =  new Flower(getRandomlengthName("罂粟花"),R.drawable.poppy);
             flowerList.add(poppy);
-            Flower kapok = new Flower(getRandomlengthName("Kapok"),R.drawable.kapok);
+            Flower kapok = new Flower(getRandomlengthName("木棉花"),R.drawable.kapok);
             flowerList.add(kapok);
-            Flower mimosa = new Flower(getRandomlengthName("Mimosa"),R.drawable.mimosa);
+            Flower mimosa = new Flower(getRandomlengthName("含羞草"),R.drawable.mimosa);
             flowerList.add(mimosa);
 
         }
