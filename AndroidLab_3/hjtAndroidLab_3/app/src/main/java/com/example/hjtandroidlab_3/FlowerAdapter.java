@@ -42,12 +42,19 @@ public class FlowerAdapter extends RecyclerView.Adapter<FlowerAdapter.ViewHolder
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.flower_item,parent,false);
         final ViewHolder holder =  new ViewHolder(view);
-        holder.flowerView.setOnClickListener(new View.OnClickListener() {
+        /*holder.flowerView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int position = holder.getAdapterPosition();
                 Flower flower = mFlowerList.get(position);
-                Toast.makeText(v.getContext(),"双击编辑",
+                Toast.makeText(v.getContext(),"长按可编辑！",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });*/
+        holder.flowerName.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(v.getContext(),"长按可编辑！",
                         Toast.LENGTH_SHORT).show();
             }
         });
