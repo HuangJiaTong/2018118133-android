@@ -20,15 +20,16 @@ public class FlowerAdapter extends RecyclerView.Adapter<FlowerAdapter.ViewHolder
     static  class ViewHolder extends RecyclerView.ViewHolder{
         View flowerView;
         ImageView flowerImage;
-        TextView flowerName;
+        EditText flowerName;
 
 
         public ViewHolder(View view){
             super(view);
             flowerView = view;
             flowerImage = (ImageView) view.findViewById(R.id.flower_image);
-            flowerName =  (TextView) view.findViewById(R.id.flower_name);
+            flowerName =  (EditText) view.findViewById(R.id.flower_name);
         }
+
 
     }
 
@@ -46,7 +47,7 @@ public class FlowerAdapter extends RecyclerView.Adapter<FlowerAdapter.ViewHolder
             public void onClick(View v) {
                 int position = holder.getAdapterPosition();
                 Flower flower = mFlowerList.get(position);
-                Toast.makeText(v.getContext(),"you clicked view" + flower.getName(),
+                Toast.makeText(v.getContext(),"双击编辑",
                         Toast.LENGTH_SHORT).show();
             }
         });
@@ -73,4 +74,5 @@ public class FlowerAdapter extends RecyclerView.Adapter<FlowerAdapter.ViewHolder
     public int getItemCount(){
         return mFlowerList.size();
     }
+
 }
