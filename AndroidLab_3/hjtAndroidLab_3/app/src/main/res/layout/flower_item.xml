@@ -17,9 +17,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="left"
         android:layout_marginLeft="10dp"
-        android:cursorVisible="false"
-        android:focusable="false"
-        android:textIsSelectable="false"/>
+        android:focusableInTouchMode="false"
+        android:focusable="false" />
 
 
 </LinearLayout>

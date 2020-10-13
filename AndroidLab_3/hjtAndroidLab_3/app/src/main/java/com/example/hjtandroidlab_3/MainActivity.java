@@ -6,6 +6,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -62,5 +65,6 @@ public class MainActivity extends AppCompatActivity{
         }
         return builder.toString();
     }
+
 
 }

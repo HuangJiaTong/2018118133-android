@@ -22,12 +22,12 @@ public class FlowerAdapter extends RecyclerView.Adapter<FlowerAdapter.ViewHolder
         ImageView flowerImage;
         EditText flowerName;
 
-
         public ViewHolder(View view){
             super(view);
             flowerView = view;
             flowerImage = (ImageView) view.findViewById(R.id.flower_image);
             flowerName =  (EditText) view.findViewById(R.id.flower_name);
+
         }
 
 
@@ -42,15 +42,6 @@ public class FlowerAdapter extends RecyclerView.Adapter<FlowerAdapter.ViewHolder
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.flower_item,parent,false);
         final ViewHolder holder =  new ViewHolder(view);
-        /*holder.flowerView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                int position = holder.getAdapterPosition();
-                Flower flower = mFlowerList.get(position);
-                Toast.makeText(v.getContext(),"长按可编辑！",
-                        Toast.LENGTH_SHORT).show();
-            }
-        });*/
         holder.flowerName.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,6 +56,14 @@ public class FlowerAdapter extends RecyclerView.Adapter<FlowerAdapter.ViewHolder
                 Flower flower = mFlowerList.get(position);
                 Toast.makeText(v.getContext(),"you clicked image "+flower.getName(),
                         Toast.LENGTH_SHORT).show();
+            }
+        });
+        holder.flowerName.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                    holder.flowerName.setFocusable(true);
+                    holder.flowerName.setFocusableInTouchMode(true);
+                return false;
             }
         });
         return holder;
@@ -83,3 +82,6 @@ public class FlowerAdapter extends RecyclerView.Adapter<FlowerAdapter.ViewHolder
     }
 
 }
+/*
+
+ */
