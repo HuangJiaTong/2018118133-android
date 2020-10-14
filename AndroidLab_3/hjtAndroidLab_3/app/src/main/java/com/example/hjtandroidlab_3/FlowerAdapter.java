@@ -82,6 +82,3 @@ public class FlowerAdapter extends RecyclerView.Adapter<FlowerAdapter.ViewHolder
     }
 
 }
-/*
-
- */
