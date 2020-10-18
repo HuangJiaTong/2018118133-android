@@ -35,11 +35,14 @@
 
             <Button
                 android:id="@+id/button4"
-                android:text="add_Button"
+                android:text="Add_Button"
                 android:layout_gravity="right|bottom"
                 app:layout_widthPercent="50%"
                 app:layout_heightPercent="50%"
                 android:textAllCaps="false"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
         </androidx.percentlayout.widget.PercentFrameLayout>
 </FrameLayout>
