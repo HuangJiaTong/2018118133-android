@@ -12,3 +12,7 @@ android学习
 实验三：https://github.com/HuangJiaTong/2018118133-android/tree/develop/AndroidLab_3
 
 实验三报告：https://github.com/HuangJiaTong/2018118133-android/blob/develop/AndroidLab_3/hjtAndroidLab_3.md
+
+实验四：https://github.com/HuangJiaTong/2018118133-android/tree/develop/AndroidLab_4
+
+实验四路径：https://github.com/HuangJiaTong/2018118133-android/blob/develop/AndroidLab_4/hjtAndroidLab_4.md
