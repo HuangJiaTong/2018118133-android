@@ -19,13 +19,14 @@ public class FlowerAdapter extends RecyclerView.Adapter<FlowerAdapter.ViewHolder
         View flowerView;
         ImageView flowerImage;
         EditText flowerName;
+        int flag;
 
         public ViewHolder(View view){
             super(view);
             flowerView = view;
             flowerImage = (ImageView) view.findViewById(R.id.flower_image);
             flowerName =  (EditText) view.findViewById(R.id.flower_name);
-
+            flag=0;
         }
 
 
@@ -40,13 +41,15 @@ public class FlowerAdapter extends RecyclerView.Adapter<FlowerAdapter.ViewHolder
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.flower_item,parent,false);
         final ViewHolder holder =  new ViewHolder(view);
-        holder.flowerName.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(v.getContext(),"长按可编辑！",
-                        Toast.LENGTH_SHORT).show();
-            }
-        });
+            holder.flowerName.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (holder.flag==0) {
+                        Toast.makeText(v.getContext(), "长按可编辑！",
+                                Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
         holder.flowerImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,6 +64,7 @@ public class FlowerAdapter extends RecyclerView.Adapter<FlowerAdapter.ViewHolder
             public boolean onLongClick(View v) {
                 holder.flowerName.setFocusable(true);
                 holder.flowerName.setFocusableInTouchMode(true);
+                holder.flag=1;
                 return false;
             }
         });
