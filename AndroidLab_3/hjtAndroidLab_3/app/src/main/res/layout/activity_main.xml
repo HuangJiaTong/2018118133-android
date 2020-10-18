@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-        <androidx.percentlayout.widget.PercentFrameLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/button1"
-                android:text="Text_Button"
-                android:layout_gravity="left|top"
-                app:layout_widthPercent="50%"
-                app:layout_heightPercent="50%"
-                android:textAllCaps="false"/>
+    android:layout_height="match_parent"
+    android:background="@drawable/beijing1">
 
             <Button
                 android:id="@+id/button2"
-                android:text="Edit_Button"
-                android:layout_gravity="right|top"
-                app:layout_widthPercent="50%"
-                app:layout_heightPercent="50%"
-                android:textAllCaps="false"/>
-
-            <Button
-                android:id="@+id/button3"
-                android:text="image_Button"
-                android:layout_gravity="left|bottom"
-                app:layout_widthPercent="50%"
-                app:layout_heightPercent="50%"
-                android:textAllCaps="false"/>
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="记事本"
+                android:textAllCaps="false"
+                android:layout_gravity="bottom"
+                android:background="#00FF7F"/>
 
             <Button
                 android:id="@+id/button4"
-                android:text="Add_Button"
-                android:layout_gravity="right|bottom"
-                app:layout_widthPercent="50%"
-                app:layout_heightPercent="50%"
-                android:textAllCaps="false"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="相机"
+                android:textAllCaps="false"
+                android:layout_gravity="bottom"
+                android:background="#FF7F00"/>
 
-        </androidx.percentlayout.widget.PercentFrameLayout>
-</FrameLayout>
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="图册"
+                android:textAllCaps="false"
+                android:layout_gravity="bottom"
+                android:background="#00FFFF"/>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="备忘录"
+                android:textAllCaps="false"
+                android:layout_gravity="bottom"
+                android:background="#FF00FF"/>
+
+</LinearLayout>
