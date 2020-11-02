@@ -1,4 +1,4 @@
-package com.example.hjtandroidlab_5;
+package com.example.webviewtest;
 
 import org.junit.Test;
 
