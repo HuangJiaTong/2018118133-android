@@ -25,3 +25,7 @@ android学习
 
 实验六报告：https://github.com/HuangJiaTong/2018118133-android/blob/develop/AndroidLab_6/hjtAndroidLab_6.md
 
+实验七Intent应用：https://github.com/HuangJiaTong/2018118133-android/tree/develop/AndroidLab_7
+
+实验七报告：https://github.com/HuangJiaTong/2018118133-android/blob/develop/AndroidLab_7/hjtAndroidLab_7.md
+
