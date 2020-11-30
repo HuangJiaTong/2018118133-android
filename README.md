@@ -29,3 +29,6 @@ android学习
 
 实验七报告：https://github.com/HuangJiaTong/2018118133-android/blob/develop/AndroidLab_7/hjtAndroidLab_7.md
 
+实验八消息处理机制和多线程的数据交换：https://github.com/HuangJiaTong/2018118133-android/tree/develop/AndroidLab_8
+
+实验八报告：https://github.com/HuangJiaTong/2018118133-android/blob/develop/AndroidLab_8/hjtAndroidLab_8.md
