@@ -32,3 +32,7 @@ android学习
 实验八消息处理机制和多线程的数据交换：https://github.com/HuangJiaTong/2018118133-android/tree/develop/AndroidLab_8
 
 实验八报告：https://github.com/HuangJiaTong/2018118133-android/blob/develop/AndroidLab_8/hjtAndroidLab_8.md
+
+实验九异步任务的隐含子线程程序框架：https://github.com/HuangJiaTong/2018118133-android/tree/develop/AndroidLab_9
+
+实验九报告：https://github.com/HuangJiaTong/2018118133-android/blob/develop/AndroidLab_9/hjAndroidLab_9.md
