@@ -45,3 +45,7 @@ MyService的前台服务
 点击Start intentService 按钮
 
 ![image-20201213145342535](imageLab_10/image-20201213145342535.png)
+
+前台服务
+
+![image-20201213145609383](imageLab_10/image-20201213145609383.png)
