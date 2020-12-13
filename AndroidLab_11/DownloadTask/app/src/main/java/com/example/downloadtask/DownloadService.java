@@ -60,7 +60,7 @@ public class DownloadService extends Service {
             Toast.makeText(DownloadService.this,"Canceled",Toast.LENGTH_SHORT).show();
         }
     };
-    
+
     private DownloadBinder mBinder = new DownloadBinder();
 
     @Override
