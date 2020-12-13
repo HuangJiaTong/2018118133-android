@@ -43,7 +43,6 @@ public class MyService extends Service {
         Log.d("MyService","onCreate executed");
         Intent intent = new Intent(this,MainActivity.class);
 
-        //新增---------------------------------------------
         String CHANNEL_ONE_ID = "com.primedu.cn";
         String CHANNEL_ONE_NAME = "Channel One";
         NotificationChannel notificationChannel = null;
@@ -57,7 +56,6 @@ public class MyService extends Service {
             NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
             manager.createNotificationChannel(notificationChannel);
         }
-//--------------------------------------------------------新增
 
         PendingIntent pi = PendingIntent.getActivity(this, 0, intent, 0);
         Notification notification = new NotificationCompat.Builder(this)
