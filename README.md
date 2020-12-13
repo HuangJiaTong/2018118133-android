@@ -36,3 +36,7 @@ android学习
 实验九异步任务的隐含子线程程序框架：https://github.com/HuangJiaTong/2018118133-android/tree/develop/AndroidLab_9
 
 实验九报告：https://github.com/HuangJiaTong/2018118133-android/blob/develop/AndroidLab_9/hjAndroidLab_9.md
+
+实验十启动和停止服务，服务代码运行在显示子线程：https://github.com/HuangJiaTong/2018118133-android/tree/develop/AndroidLab_10
+
+实验十报告：https://github.com/HuangJiaTong/2018118133-android/blob/develop/AndroidLab_10/hjtAndroidLab_10.md
