@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         cancelDownload.setOnClickListener(this);
         Intent intent = new Intent(this,DownloadService.class);
         startService(intent);//启动服务
-        bindService(intent,connection,BIND_AUTO_CREATE);//绑定服务
+        bindService(intent, connection, BIND_AUTO_CREATE);//绑定服务
         if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.
                 permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(MainActivity.this,new
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         switch (v.getId()){
             case R.id.start_download:
-                String url = "https://raw.githubusercontent.com/guolindev/eclipse/master/eclipse-inst-win64.exe";
+                String url = "https://d1.music.126.net/dmusic/cloudmusicsetup2.7.4.198374.exe";
                 downloadBinder.startDownload(url);
                 break;
             case R.id.pause_download:
@@ -73,8 +73,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
-    public void onRequestPermissionsResult(int requestCode,String[] permissions,
-                                           int[] grantResults){
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults){
         switch (requestCode){
             case 1:
                 if (grantResults.length > 0 && grantResults[0] != PackageManager.PERMISSION_GRANTED){

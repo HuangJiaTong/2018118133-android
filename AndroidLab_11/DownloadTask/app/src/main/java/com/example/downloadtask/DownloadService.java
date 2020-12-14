@@ -144,7 +144,5 @@ public class DownloadService extends Service {
         }
         return builder.build();
     }
-    public DownloadService() {
-    }
 
 }
