@@ -45,15 +45,4 @@
         app:menu="@menu/nav_menu"
         app:headerLayout="@layout/nav_header"/>
 
-    <com.google.android.material.card.MaterialCardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="4dp"
-        app:cardElevation="5dp">
-        <TextView
-            android:id="@+id/info_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-    </com.google.android.material.card.MaterialCardView>
-
 </androidx.drawerlayout.widget.DrawerLayout>
