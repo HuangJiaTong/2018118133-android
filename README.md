@@ -44,3 +44,7 @@ android学习
 实验十一子服务的绑定，子服务代码运行在在异步任务：https://github.com/HuangJiaTong/2018118133-android/tree/develop/AndroidLab_11
 
 实验十一报告：https://github.com/HuangJiaTong/2018118133-android/blob/develop/AndroidLab_11/hjtAndroidLab_11.md
+
+实验十二最佳的UI体验——Material Design实战：https://github.com/HuangJiaTong/2018118133-android/tree/develop/AndroidLab_12
+
+实验十二报告：https://github.com/HuangJiaTong/2018118133-android/blob/develop/AndroidLab_12/AndroidLab_12.md
