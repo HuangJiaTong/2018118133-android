@@ -40,3 +40,7 @@ android学习
 实验十启动和停止服务，服务代码运行在显示子线程：https://github.com/HuangJiaTong/2018118133-android/tree/develop/AndroidLab_10
 
 实验十报告：https://github.com/HuangJiaTong/2018118133-android/blob/develop/AndroidLab_10/hjtAndroidLab_10.md
+
+实验十一子服务的绑定，子服务代码运行在在异步任务：https://github.com/HuangJiaTong/2018118133-android/tree/develop/AndroidLab_11
+
+实验十一报告：https://github.com/HuangJiaTong/2018118133-android/blob/develop/AndroidLab_11/hjtAndroidLab_11.md
