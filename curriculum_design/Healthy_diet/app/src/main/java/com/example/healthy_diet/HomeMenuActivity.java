@@ -23,7 +23,7 @@ public class HomeMenuActivity extends AppCompatActivity {
 
                 break;
             case R.id.home_btn3:
-                
+
                 break;
         }
 
