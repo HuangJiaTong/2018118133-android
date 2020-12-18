@@ -34,6 +34,7 @@ public class InfoListActivity extends AppCompatActivity {
         allFoodList = FoodUtils.getAllFoodList();
         mDatas.addAll(allFoodList);
         //创建适配器
+        adapter = new InfoListAdapter(this, mDatas);
 
     }
 
