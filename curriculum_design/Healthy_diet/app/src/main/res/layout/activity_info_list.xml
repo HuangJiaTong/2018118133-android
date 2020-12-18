@@ -38,4 +38,11 @@
             android:textColor="@color/white"/>
     </RelativeLayout>
 
+    <ListView
+        android:id="@+id/infolist_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/dividerColor"
+        android:dividerHeight="1dp"/>
+
 </LinearLayout>
