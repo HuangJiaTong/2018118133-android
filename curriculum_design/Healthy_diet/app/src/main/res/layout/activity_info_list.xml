@@ -36,7 +36,6 @@
             android:background="@drawable/info_et_bg"
             android:layout_centerVertical="true"
             android:textColor="@color/white"/>
-
     </RelativeLayout>
 
 </LinearLayout>
