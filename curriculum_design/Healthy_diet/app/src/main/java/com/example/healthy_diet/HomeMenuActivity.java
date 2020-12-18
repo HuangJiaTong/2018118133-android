@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.healthy_diet.food_list.InfoListActivity;
+
 public class HomeMenuActivity extends AppCompatActivity {
 
     @Override
@@ -18,7 +20,7 @@ public class HomeMenuActivity extends AppCompatActivity {
         Intent intent = new Intent();
         switch (view.getId()) {
             case R.id.home_btn1:
-                intent.setClass(HomeMenuActivity.this,InfoListActivity.class);
+                intent.setClass(HomeMenuActivity.this, InfoListActivity.class);
                 break;
             case R.id.home_btn2:
 

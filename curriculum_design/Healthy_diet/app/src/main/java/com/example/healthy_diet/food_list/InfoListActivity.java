@@ -1,4 +1,4 @@
-package com.example.healthy_diet;
+package com.example.healthy_diet.food_list;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.example.healthy_diet.R;
 import com.example.healthy_diet.bean.FoodBean;
 import com.example.healthy_diet.bean.FoodUtils;
 

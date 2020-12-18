@@ -1,4 +1,4 @@
-package com.example.healthy_diet;
+package com.example.healthy_diet.bean;
 
 import java.io.Serializable;
 

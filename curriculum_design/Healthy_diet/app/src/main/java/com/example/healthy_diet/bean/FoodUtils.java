@@ -1,4 +1,6 @@
-package com.example.healthy_diet;
+package com.example.healthy_diet.bean;
+
+import com.example.healthy_diet.R;
 
 import java.util.ArrayList;
 import java.util.List;
