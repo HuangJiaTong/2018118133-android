@@ -1,5 +1,8 @@
 package com.example.healthy_diet;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class FoodUtils {
     private static final String[] food = { "猪肉", "猪肝", "猪血", "羊肉", "牛肉", "牛肝", "鹅肉", "兔肉", "狗肉",
             "鸭肉", "鸡肉", "驴肉", "鸡蛋", "鲤鱼", "黄鱼", "虾", "虾皮", "螃蟹", "蛤", "鳖肉",
@@ -64,4 +67,13 @@ public class FoodUtils {
             "牛奶的营养成分很高，牛奶中的矿物质种类也非常丰富，除了我们所熟知的钙以外，磷、铁、锌、铜、锰、钼的含量都很多。牛奶是人体钙的最佳来源，而且钙磷比例非常适当，利于钙的吸收。牛奶中含组成人体蛋白质的氨基酸有20种，其中有8种是人体本身不能合成的，为必需氨基酸，牛奶是人类最理想的天然食品。",
             "白酒主要由水乙醇和少量微量元素组成。夜晚服用少量的白酒，可平缓的促进血液循环，起到催眠作用。饮少量白酒可刺激胃液分泌与唾液分泌，因而起到健胃和止疼痛、利小便及驱虫的作用。白酒味苦、甘、辛，性温，有毒，入心、肝、肺、胃经。",
             "啤酒营养丰富，其中含有丰富的氨基酸，是原料大麦含有的蛋白质经过酶的作用分解而产生的。且啤酒中还含有多种维生素。适量饮啤酒有强心、利尿、健胃的功效。"};
+
+    public static List<FoodBean> getAllFoodList(){
+        List<FoodBean> list = new ArrayList<>();
+        for (int i = 0; i < food.length; i++) {
+            FoodBean bean = new FoodBean(food[i],food1[i],foodjianjie[i],resId[i]);
+            list.add(bean);
+        }
+        return list;
+    }
 }
