@@ -27,6 +27,6 @@ public class HomeMenuActivity extends AppCompatActivity {
 
                 break;
         }
-
+        startActivity(intent);
     }
 }
