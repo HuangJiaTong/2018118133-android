@@ -43,7 +43,7 @@ public class InfoListAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        
+
         ViewHolder holder = null;
         if (convertView == null) {
             convertView = LayoutInflater.from(context).inflate(R.layout.item_infolist_lv,null); //将布局转换成view对象的方法
@@ -52,8 +52,8 @@ public class InfoListAdapter extends BaseAdapter {
         }else {
             holder = (ViewHolder) convertView.getTag();
         }
-//        加载控件显示的内容
-//        获取集合指定位置的数据
+          //加载控件显示的内容
+          //获取集合指定位置的数据
         FoodBean foodBean = mDatas.get(position);
         holder.titleTv.setText(foodBean.getTitle());
         holder.notTv.setText("不可匹配:"+foodBean.getNotmatch());
