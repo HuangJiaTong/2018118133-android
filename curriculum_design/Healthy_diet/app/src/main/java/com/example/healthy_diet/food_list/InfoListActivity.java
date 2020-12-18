@@ -7,11 +7,20 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.example.healthy_diet.bean.FoodBean;
+import com.example.healthy_diet.bean.FoodUtils;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class InfoListActivity extends AppCompatActivity {
 
     EditText searchEt;
     ImageView searchIv,flushIv;
     ListView showLv;
+    //ListView数据源
+    List<FoodBean> mDatas;
+    List<FoodBean>allFoodList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +28,11 @@ public class InfoListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_info_list);
         //查找控件
         initView();
+        //初始化数据源
+        mDatas = new ArrayList<>();
+        allFoodList = FoodUtils.getAllFoodList();
+        mDatas.addAll(allFoodList);
+        //创建适配器
 
     }
 
