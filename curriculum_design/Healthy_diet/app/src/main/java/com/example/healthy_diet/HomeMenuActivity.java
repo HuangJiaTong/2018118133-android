@@ -2,6 +2,7 @@ package com.example.healthy_diet;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -14,10 +15,10 @@ public class HomeMenuActivity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
-
+        Intent intent = new Intent();
         switch (view.getId()) {
             case R.id.home_btn1:
-
+                intent.setClass(HomeMenuActivity.this,InfoListActivity.class);
                 break;
             case R.id.home_btn2:
 
