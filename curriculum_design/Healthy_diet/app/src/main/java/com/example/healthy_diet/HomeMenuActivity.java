@@ -27,7 +27,7 @@ public class HomeMenuActivity extends AppCompatActivity {
                 intent.setClass(HomeMenuActivity.this, FoodGridActivity.class);
                 break;
             case R.id.home_btn3:
-
+                intent.setClass(HomeMenuActivity.this, AboutActivity.class);
                 break;
         }
         startActivity(intent);

@@ -8,8 +8,8 @@ import androidx.viewpager.widget.PagerAdapter;
 
 import java.util.List;
 
-public class AboutAdapter extends PagerAdapter {
-    List<View> viewList;
+public class AboutAdapter extends PagerAdapter{
+    List<View>viewList;
 
     public AboutAdapter(List<View> viewList) {
         this.viewList = viewList;
