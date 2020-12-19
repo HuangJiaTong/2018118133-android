@@ -3,8 +3,11 @@ package com.example.healthy_diet;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
@@ -22,6 +25,20 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
     List<View> viewList;   //ViewPager的数据源
     int[]picIds = {R.mipmap.ab1,R.mipmap.ab2,R.mipmap.ab3,R.mipmap.ab4,R.mipmap.ab5};
     private AboutAdapter adapter;
+    List<ImageView>pointList;   //存放显示器小点点的集合
+    //设置图片自动切换定时器
+    @SuppressLint("HandlerLeak")
+    Handler handler = new Handler(){
+        @Override
+        public void handleMessage(Message msg) {
+            if (msg.what == 1) {
+                //接收到消息之后，需要使ViewPager页面向下滑动一页
+                int currentItem = aboutVp.getCurrentItem();
+                aboutVp.setCurrentItem(currentItem+1);
+                handler.sendEmptyMessageDelayed(1,5000);
+            }
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +61,7 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
         //设置适配器
         aboutVp.setAdapter(adapter);
         //发送切换页面消息
+        handler.sendEmptyMessageDelayed(1,5000);
 
     }
 
