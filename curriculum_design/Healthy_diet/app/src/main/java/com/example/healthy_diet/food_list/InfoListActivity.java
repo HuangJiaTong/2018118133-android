@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.example.healthy_diet.R;
 import com.example.healthy_diet.bean.FoodBean;
 import com.example.healthy_diet.bean.FoodUtils;
+import com.example.healthy_diet.food_grid.FoodDescActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,10 +46,21 @@ public class InfoListActivity extends AppCompatActivity implements View.OnClickL
         //设置适配器
         showLv.setAdapter(adapter);
         //设置单向点击监听功能
+        setListener();
 
     }
 
-
+    private void setListener() {
+        showLv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                FoodBean foodBean = mDatas.get(position);
+                Intent intent = new Intent(InfoListActivity.this, FoodDescActivity.class);
+                intent.putExtra("food",foodBean);
+                startActivity(intent);
+            }
+        });
+    }
 
 
     private void initView() {
