@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.healthy_diet.food_grid.FoodGridActivity;
 import com.example.healthy_diet.food_list.InfoListActivity;
 
 public class HomeMenuActivity extends AppCompatActivity {
@@ -23,7 +24,7 @@ public class HomeMenuActivity extends AppCompatActivity {
                 intent.setClass(HomeMenuActivity.this, InfoListActivity.class);
                 break;
             case R.id.home_btn2:
-
+                intent.setClass(HomeMenuActivity.this, FoodGridActivity.class);
                 break;
             case R.id.home_btn3:
 
