@@ -2,7 +2,10 @@ package com.example.healthy_diet.food_grid;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 
 import com.example.healthy_diet.R;
@@ -29,5 +32,18 @@ public class FoodGridActivity extends AppCompatActivity {
         adapter = new FoodGridAdapter(this, mDatas);
         //设置适配器
         gv.setAdapter(adapter);
+        setListener();
+    }
+
+    private void setListener() {
+        gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                FoodBean foodBean = mDatas.get(position);
+                Intent intent = new Intent(FoodGridActivity.this, FoodDescActivity.class);
+                intent.putExtra("food",foodBean);
+                startActivity(intent);
+            }
+        });
     }
 }
