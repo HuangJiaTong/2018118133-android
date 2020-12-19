@@ -16,6 +16,7 @@ import com.example.healthy_diet.R;
 public class MainActivity extends AppCompatActivity {
     TextView tv;
     int time = 5;
+    SharedPreferences preferences;  //存储键值对数据
     private SharedPreferences.Editor editor;
 
     @SuppressLint("HandlerLeak")
@@ -27,10 +28,16 @@ public class MainActivity extends AppCompatActivity {
                 if (time ==0) {
                     //  跳转页面
                     Intent intent = new Intent();
-                    intent.setClass(MainActivity.this, HomeMenuActivity.class);
+                    boolean isfirst = preferences.getBoolean("isfirst", true);
+                    if (isfirst) {
+                        intent.setClass(MainActivity.this,GuideActivity.class);
+                        editor.putBoolean("isfirst",false);  //写入不是第一次进入的纪录
+                        editor.commit();    // 提交本次修改纪录
+                    }else {
+                        intent.setClass(MainActivity.this,HomeMenuActivity.class);
+                    }
                     startActivity(intent);
                     finish();
-
                 }else {
                     tv.setText(time+"");
                     handler.sendEmptyMessageDelayed(1,1000);
@@ -44,7 +51,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         tv = findViewById(R.id.main_tv);
-
+        preferences = getSharedPreferences("health_pref",MODE_PRIVATE);
+        editor = preferences.edit(); //写入数据的对象
         handler.sendEmptyMessageDelayed(1,1000);
     }
 }
