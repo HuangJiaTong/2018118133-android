@@ -9,12 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GuideActivity"></activity>
+        <activity android:name=".guide.GuideActivity"></activity>
         <activity android:name=".AboutActivity" />
         <activity android:name=".food_grid.FoodDescActivity" />
         <activity android:name=".food_grid.FoodGridActivity" />
         <activity android:name=".food_list.InfoListActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".guide.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

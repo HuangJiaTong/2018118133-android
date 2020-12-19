@@ -1,4 +1,4 @@
-package com.example.healthy_diet;
+package com.example.healthy_diet.guide;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.widget.TextView;
+
+import com.example.healthy_diet.HomeMenuActivity;
+import com.example.healthy_diet.R;
 
 public class MainActivity extends AppCompatActivity {
     TextView tv;
@@ -24,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 if (time ==0) {
                     //  跳转页面
                     Intent intent = new Intent();
-                    intent.setClass(MainActivity.this,HomeMenuActivity.class);
+                    intent.setClass(MainActivity.this, HomeMenuActivity.class);
                     startActivity(intent);
                     finish();
 
