@@ -5,15 +5,23 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class AboutActivity extends AppCompatActivity implements View.OnClickListener{
 
     ViewPager aboutVp;
     TextView shareTv;
     LinearLayout pointLayout;
+    List<View> viewList;   //ViewPager的数据源
+    int[]picIds = {R.mipmap.ab1,R.mipmap.ab2,R.mipmap.ab3,R.mipmap.ab4,R.mipmap.ab5};
+    private AboutAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +31,20 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
         shareTv = findViewById(R.id.about_tv_share);
         pointLayout = findViewById(R.id.about_layout_point);
         shareTv.setOnClickListener(this);
+        viewList = new ArrayList<>();
+        //初始化ViewPager的页面信息
+        for (int i = 0; i < picIds.length; i++) {
+            View view = LayoutInflater.from(this).inflate(R.layout.item_aboutvp, null);
+            ImageView iv = view.findViewById(R.id.item_aboutvp_iv);
+            iv.setImageResource(picIds[i]);
+            viewList.add(view);
+        }
+        // 创建适配器对象
+        adapter = new AboutAdapter(viewList);
+        //设置适配器
+        aboutVp.setAdapter(adapter);
+        //发送切换页面消息
+
     }
 
     @Override
