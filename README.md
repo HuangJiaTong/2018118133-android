@@ -48,3 +48,7 @@ android学习
 实验十二最佳的UI体验——Material Design实战：https://github.com/HuangJiaTong/2018118133-android/tree/develop/AndroidLab_12
 
 实验十二报告：https://github.com/HuangJiaTong/2018118133-android/blob/develop/AndroidLab_12/AndroidLab_12.md
+
+课程设计：https://github.com/HuangJiaTong/2018118133-android/tree/develop/curriculum_design
+
+课程设计报告：https://github.com/HuangJiaTong/2018118133-android/blob/develop/curriculum_design/curriculum_design.md
